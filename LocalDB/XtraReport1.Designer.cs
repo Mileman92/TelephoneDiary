@@ -75,11 +75,14 @@
             this.table5 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.database1DataSet1 = new LocalDB.Database1DataSet();
+            this.phoneBooksTableAdapter = new LocalDB.Database1DataSetTableAdapters.PhoneBooksTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // sqlDataSource1
@@ -520,6 +523,15 @@
             this.tableCell10.StylePriority.UseForeColor = false;
             this.tableCell10.Weight = 0.13228465499895506D;
             // 
+            // database1DataSet1
+            // 
+            this.database1DataSet1.DataSetName = "Database1DataSet";
+            this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // phoneBooksTableAdapter
+            // 
+            this.phoneBooksTableAdapter.ClearBeforeFill = true;
+            // 
             // XtraReport1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -528,7 +540,9 @@
             this.ReportHeader,
             this.Detail});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.sqlDataSource1});
+            this.sqlDataSource1,
+            this.database1DataSet1});
+            this.DataAdapter = this.phoneBooksTableAdapter;
             this.DataMember = "PhoneBooks";
             this.DataSource = this.sqlDataSource1;
             this.Dpi = 254F;
@@ -545,12 +559,13 @@
             this.GroupData1,
             this.GroupFooterBackground3,
             this.PageInfo});
-            this.Version = "19.2";
+            this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -590,5 +605,7 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private Database1DataSet database1DataSet1;
+        private Database1DataSetTableAdapters.PhoneBooksTableAdapter phoneBooksTableAdapter;
     }
 }

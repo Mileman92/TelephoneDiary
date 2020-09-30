@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalDB", "LocalDB\LocalDB.csproj", "{2C349AE1-5009-4D07-BF52-0BE90E3C452F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TelephoneDiarySetup", "TelephoneDiarySetup\TelephoneDiarySetup.vdproj", "{C14FEC64-1245-4754-826C-89F5BB0256AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{2C349AE1-5009-4D07-BF52-0BE90E3C452F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C349AE1-5009-4D07-BF52-0BE90E3C452F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C349AE1-5009-4D07-BF52-0BE90E3C452F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14FEC64-1245-4754-826C-89F5BB0256AD}.Debug|Any CPU.ActiveCfg = Debug
+		{C14FEC64-1245-4754-826C-89F5BB0256AD}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

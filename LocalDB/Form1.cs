@@ -1,8 +1,10 @@
-﻿using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraReports.Design;
+using DevExpress.XtraReports.UI;
 using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -233,9 +235,11 @@ namespace LocalDB
         // Bitmap bmp;
         private void materialFlatButton8_Click(object sender, EventArgs e)
         {
-            
 
-             XtraReport1 report = new XtraReport1();
+
+          
+
+            XtraReport1 report = new XtraReport1();
            
              report.ShowPreview();
                   
